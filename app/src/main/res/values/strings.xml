@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Via Sacra</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tituloI">Jesus é condenado a morte</string>
+    <string name="tituloII">Jesus carrega a cruz às costas</string>
+    <string name="tituloIII">Jesus cai pela primeira vez</string>
+    <string name="tituloIV">Jesus encontra a Sua Mãe</string>
+    <string name="tituloV">Simão de Cirene ajuda Jesus</string>
+    <string name="tituloVI">Verônica limpa a face de Jesus</string>
+    <string name="tituloVII">Jesus cai pela segunda vez</string>
+    <string name="tituloVIII">Jesus encontra as mulheres de Jerusalém</string>
+    <string name="tituloIX">Jesus cai pela terceira vez</string>
+    <string name="tituloX">Jesus é despojado de Suas vestes</string>
+    <string name="tituloXI">Jesus é pregado na cruz</string>
+    <string name="tituloXII">Jesus morre na cruz</string>
+    <string name="tituloXIII">Jesus é descido da cruz</string>
+    <string name="tituloXIV">Jesus é sepultado</string>
+
+
+
+    <string name="descricaoEstacaoI">Pilatos, desejando agradar à multidão, soltou-lhes Barrabás; e, depois de mandar flagelar Jesus, entregou-O para ser crucificado. (Mc 15,15) </string>
+    <string name="descricaoEstacaoII">Depois de O terem escarnecido, tiraram-Lhe o manto, vestiram-Lhe as Suas roupas e levaram-No para ser crucificado. (Mt 27,31) </string>
+    <string name="descricaoEstacaoIII">Vinde a Mim, todos os que estais cansados e oprimidos, que Eu hei-de aliviar-vos. Tomai sobre vós o Meu jugo e aprendei de Mim, porque sou manso e humilde de coração e encontrareis descanso para o vosso espírito. Pois o Meu jugo é suave e o Meu fardo é leve. ( Mt 11,28-30) </string>
+    <string name="descricaoEstacaoIV">Aquele que fizer a vontade de Deus, esse é que é meu irmão, minha irmã e minha mãe. (Mc 3,35) </string>
+    <string name="descricaoEstacaoV">Jesus perguntou: Qual [...] te parece ter sido o próximo daquele homem que caiu nas mãos dos salteadores?	 \nRespondeu: O que usou de misericórdia para com ele. \nJesus retorquiu: Vai e faz tu também o mesmo.	(Lc 10, 36-37) </string>
+    <string name="descricaoEstacaoVI">Ó vós todos que passais pelo caminho, \nolhai e vede \nse existe dor igual \nà dor que Me atormenta. (Lm 1,12) </string>
+    <string name="descricaoEstacaoVII">Se alguém quiser vir após Mim, negue-se a si mesmo, tome a sua cruz e siga-Me. \nNa verdade, quem quiser salvar a sua vida, há-de perdê-la; mas, quem perder a sua vida por causa de Mim e do Evangelho, há-de salvá-la. (Mc 8,3-35) </string>
+    <string name="descricaoEstacaoVIII">Jesus voltou-se para elas e disse-lhes: Filhas de Jerusalém, não choreis por Mim, chorai antes por vós mesmas e pelos vossos filhos. (Lc 23, 28) </string>
+    <string name="descricaoEstacaoIX">E disse-lhes: "A Minha alma está numa tristeza mortal; ficai aqui e vigiai". Mc 14,34) </string>
+    <string name="descricaoEstacaoX">Assim se cumpriu a Escritura, que diz: \nRepartiram entre eles as minhas vestes \ne sobre a minha túnica lançaram sortes. (Jo 19,24) </string>
+    <string name="descricaoEstacaoXI">Então, Jesus, ao ver ali ao pé a sua mãe e o discípulo que Ele amava, disse à mãe: "Mulher, eis o teu filho!" \nDepois, disse ao discípulo: Eis a tua mãe! E, desde aquela hora, o discípulo acolheu-a como sua. (Jo 19, 26-27)	 </string>
+    <string name="descricaoEstacaoXII">Dando um forte grito, Jesus exclamou: "Pai, nas Tuas mãos entrego o Meu espírito". Dito isto, expirou.	(Lc 23,46) </string>
+    <string name="descricaoEstacaoXIII">Uma espada trespassará a tua alma. Assim hão-de revelar-se os pensamentos de muitos corações. (Lc 2,25) </string>
+    <string name="descricaoEstacaoXIV">José de Arimateia foi ter com Pilatos e pediu-lhe o corpo de Jesus.	\nDescendo-O da cruz, envolveu-O num lençol e depositou-O num sepulcro talhado na rocha, onde ainda ninguém tinha sido sepultado. (Lc 23,52) </string>
+    <string name="descricaoEstacaoXV">Jesus disse [a Maria Madalena]: "Não Me detenhas, pois ainda não subi para o Pai; mas vai ter com os Meus irmãos e diz-lhes: Subo para o Meu Pai, que é vosso Pai, para o Meu Deus, que é vosso Deus.'" \nMaria Madalena foi e anunciou aos discípulos: "Vi o Senhor!" E contou o que Ele lhe tinha dito. (Jo 20,17-18).	 </string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="sobre_descricao">"Este aplicativo foi feito com a intenção de lhe ajudar a meditar mais sobre a paixão de Nosso Senhor Jesus Cristo!"</string>
+    <string name="descricao_indulgencias"><b><i>Concede-se indulgência plenária ao fiel que fizer o exercício da via-sacra, piedosamente.</i></b>\n\n\tCom o piedoso exercício da via-sacra renova-se a memória das dores que sofreu o divino Redentor no caminho do pretório de Pilatos, onde foi condenado à morte, até ao monte Calvário, onde morreu na cruz para a nossa salvação.\n\nPara ganhar a indulgência plenária, determina-se o seguinte:\n\t1. O piedoso exercício deve-se realizar diante elas estações da via-sacra, legitimamente eretas.\n\t2. Requerem-se catorze cruzes para erigir a via-sacra; junto com as cruzes, costuma-se colocar outras tantas imagens ou quadros que representam as estações de Jerusalém.\n\t3. Conforme o costume mais comum, o piedoso exercício consta de catorze leituras devotas, a que se acrescentam algumas orações vocais. Requer-se piedosa meditação só da Paixão e Morte do Senhor, sem ser necessária a consideração do mistério de cada estação.\n\t4. Exige-se o movimento de uma para a outra estação. Mas se a via-sacra se faz publicamente e não se pode fazer o movimento de todos os presentes ordenadamente, basta que o dirigente se mova para cada uma das estações, enquanto os outros ficam em seus lugares. \n\t5. Os legitimamente impedidos poderão ganhar a indulgência com uma piedosa leitura e meditação da Paixão e Morte do Senhor ao menos por algum tempo, por exemplo, um quarto de hora. \n\t6. Assemelham-se ao piedoso exercício da via-sacra, também quanto à aquisição da indulgência, outros piedosos exercícios, aprovados pela competente autoridade: neles se fará memória da Paixão e Morte do Senhor, determinando também catorze estações. \n\t7. Entre os orientais, onde não houver uso deste exercício, os Patriarcas poderão determinar, para lucrar esta indulgência, outro piedoso exercício em lembrança da Paixão e Morte de Nosso Senhor Jesus Cristo.</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+</resources>
