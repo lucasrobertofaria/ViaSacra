@@ -20,6 +20,7 @@ import com.github.florent37.materialviewpager.header.HeaderDesign;
 import java.util.Arrays;
 import java.util.List;
 
+import br.com.lucasfaria.viasacra.DAO.ParametrosDAO;
 import br.com.lucasfaria.viasacra.R;
 import br.com.lucasfaria.viasacra.fragments.IEstacaoFragment;
 import br.com.lucasfaria.viasacra.fragments.IIEstacaoFragment;
@@ -40,25 +41,13 @@ import br.com.lucasfaria.viasacra.fragments.XIVEstacaoFragment;
 public class MainActivity extends AppCompatActivity {
 
     private MaterialViewPager mViewPager;
-    private IEstacaoFragment iEstacaoFragment = new IEstacaoFragment();
-    private IIEstacaoFragment iiEstacaoFragment = new IIEstacaoFragment();
-    private IIIEstacaoFragment iiiEstacaoFragment = new IIIEstacaoFragment();
-    private IVEstacaoFragment ivEstacaoFragment = new IVEstacaoFragment();
-    private VEstacaoFragment vEstacaoFragment = new VEstacaoFragment();
-    private VIEstacaoFragment viEstacaoFragment = new VIEstacaoFragment();
-    private VIIEstacaoFragment viiEstacaoFragment = new VIIEstacaoFragment();
-    private VIIIEstacaoFragment viiiEstacaoFragment = new VIIIEstacaoFragment();
-    private IXEstacaoFragment ixEstacaoFragment = new IXEstacaoFragment();
-    private XEstacaoFragment xEstacaoFragment = new XEstacaoFragment();
-    private XIEstacaoFragment xiEstacaoFragment = new XIEstacaoFragment();
-    private XIIEstacaoFragment xiiEstacaoFragment = new XIIEstacaoFragment();
-    private XIIIEstacaoFragment xiiiEstacaoFragment = new XIIIEstacaoFragment();
-    private XIVEstacaoFragment xivEstacaoFragment = new XIVEstacaoFragment();
 
-    List<ViaSacraEstacaoFragment> fragmentList = Arrays.asList(iEstacaoFragment, iiEstacaoFragment, iiiEstacaoFragment, ivEstacaoFragment, vEstacaoFragment, viEstacaoFragment, viiEstacaoFragment, viiiEstacaoFragment, ixEstacaoFragment, xEstacaoFragment, xiEstacaoFragment, xiiEstacaoFragment, xiiiEstacaoFragment, xivEstacaoFragment);
+    private List<ViaSacraEstacaoFragment> fragmentList = Arrays.asList(new IEstacaoFragment(), new IIEstacaoFragment(), new IIIEstacaoFragment(), new IVEstacaoFragment(), new VEstacaoFragment(), new VIEstacaoFragment(), new VIIEstacaoFragment(),
+            new VIIIEstacaoFragment(), new IXEstacaoFragment(), new XEstacaoFragment(), new XIEstacaoFragment(), new XIIEstacaoFragment(), new XIIIEstacaoFragment(), new XIVEstacaoFragment());
 
-    DisplayMetrics metrics;
-    Float tamanhoFonte;
+    private DisplayMetrics metrics;
+    private Float tamanhoFonte;
+    private ParametrosDAO dao;
 
 
     @Override
@@ -66,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mViewPager = findViewById(R.id.materialViewPager);
+        dao = new ParametrosDAO(getApplicationContext());
 
         FragmentPagerAdapter adapter = new MyPagerAdapter(getSupportFragmentManager());
 
@@ -74,17 +64,10 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
 
-        Toolbar toolbar = mViewPager.getToolbar();
-
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-
-            ActionBar actionBar = getSupportActionBar();
-            actionBar.setDisplayHomeAsUpEnabled(false);
-            actionBar.setDisplayShowHomeEnabled(false);
-            actionBar.setDisplayShowTitleEnabled(false);
-            actionBar.setDisplayUseLogoEnabled(false);
-//            actionBar.setHomeButtonEnabled(false);
+        configurarToolbar();
+        Float tamanhoRecuperado = dao.recuperarTamanhoFonte();
+        if (tamanhoRecuperado != null && tamanhoRecuperado != 0.f) {
+            atualizarTamanhoFonte(tamanhoRecuperado);
         }
 
 
@@ -101,6 +84,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void configurarToolbar() {
+        Toolbar toolbar = mViewPager.getToolbar();
+
+        if (toolbar != null) {
+            setSupportActionBar(toolbar);
+
+            ActionBar actionBar = getSupportActionBar();
+            actionBar.setDisplayHomeAsUpEnabled(false);
+            actionBar.setDisplayShowHomeEnabled(false);
+            actionBar.setDisplayShowTitleEnabled(false);
+            actionBar.setDisplayUseLogoEnabled(false);
+//            actionBar.setHomeButtonEnabled(false);
+        }
     }
 
 
@@ -120,32 +118,22 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         metrics = getApplicationContext().getResources().getDisplayMetrics();
-        tamanhoFonte = iEstacaoFragment.getDescricao().getTextSize() / metrics.density;
+        tamanhoFonte = fragmentList.get(0).getDescricao().getTextSize() / metrics.density;
         //noinspection SimplifiableIfStatement
         if (id == R.id.actionZoomDown) {
 
 
             if (tamanhoFonte != null && tamanhoFonte > 10.f) {
-                tamanhoFonte = tamanhoFonte - 1.f;
-                for (ViaSacraEstacaoFragment fragment : fragmentList) {
-                    fragment.atualizarTamanhoFonte(tamanhoFonte);
-                }
-//                iEstacaoFragment.atualizarTamanhoFonte(tamanhoFonte);
+                atualizarTamanhoFonte(tamanhoFonte - 1.f);
             }
 
-
-            iiEstacaoFragment.atualizarTamanhoFonte(tamanhoFonte);
 
             return true;
         } else if (id == R.id.actionZoomUp) {
 
             if (tamanhoFonte != null && tamanhoFonte < 40.f) {
-                tamanhoFonte = tamanhoFonte + 1.f;
-                for (ViaSacraEstacaoFragment fragment : fragmentList) {
-                    fragment.atualizarTamanhoFonte(tamanhoFonte);
-                }
+                atualizarTamanhoFonte(tamanhoFonte + 1.f);
             }
-
 
 
         } else if (id == R.id.actionSobre) {
@@ -155,6 +143,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void atualizarTamanhoFonte(float tamanho) {
+        tamanhoFonte = tamanho;
+        for (ViaSacraEstacaoFragment fragment : fragmentList) {
+            fragment.atualizarTamanhoFonte(tamanhoFonte);
+        }
+        dao.salvarTamanhoFonte(tamanhoFonte);
     }
 
 
