@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Via Sacra</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tituloI">Jesus é condenado a morte</string>
     <string name="tituloII">Jesus carrega a cruz às costas</string>
@@ -17,7 +17,6 @@
     <string name="tituloXII">Jesus morre na cruz</string>
     <string name="tituloXIII">Jesus é descido da cruz</string>
     <string name="tituloXIV">Jesus é sepultado</string>
-
 
 
     <string name="descricaoEstacaoI">Pilatos, desejando agradar à multidão, soltou-lhes Barrabás; e, depois de mandar flagelar Jesus, entregou-O para ser crucificado. (Mc 15,15) </string>
@@ -111,5 +110,9 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="titulo_padrao">Você sabia que é possível lucrar indulguências rezando a Via Sacra?</string>
+    <string name="msg_padrao">Indulgências anexas à Via-Sacra\n\nConcede-se indulgência plenária ao fiel que fizer o exercício da Via-Sacra, piedosamente. Com o piedoso exercício da Via-Sacra renova-se a memória das dores que sofreu o divino Redentor no caminho do pretório de Pilatos, onde foi condenado à morte, até o monte Calvário, onde morreu na cruz para a nossa salvação. Para ganhar a indulgência plenária, determina-se o seguinte:\n\n– O piedoso exercício deve-se realizar diante das estações da via-sacra, legitimamente eretas.\n\n– Requerem-se catorze cruzes para erigir a via-sacra; junto com as cruzes, costuma-se colocar outras tantas imagens ou quadros que representam as estações de Jerusalém.\n\n– Conforme o costume mais comum, o piedoso exercício consta de catorze leituras devotas, a que se acrescentam algumas orações vocais. Requer-se piedosa meditação só da Paixão e Morte do Senhor, sem ser necessária a consideração do mistério de cada estação.\n\n– Exige-se o movimento de uma para a outra estação. Mas se a via-sacra se faz publicamente e não se pode fazer o movimento de todos os presentes ordenadamente, basta que o dirigente se mova para cada uma das estações, enquanto os outros ficam em seus lugares.\n\n– Os legitimamente impedidos poderão ganhar a indulgência com uma piedosa leitura e meditação da Paixão e Morte do Senhor ao menos por algum tempo, por exemplo, um quarto de hora.\n\n– Assemelham-se ao piedoso exercício da via-sacra, também quanto à aquisição da indulgência, outros piedosos exercícios, aprovados pela competente autoridade: neles se fará memória da Paixão e Morte do Senhor, determinando também catorze estações.\n\n– Entre os orientais, onde não houver uso deste exercício, os Patriarcas poderão determinar, para lucrar esta indulgência, outro piedoso exercício em lembrança Paixão e Morte de Nosso Senhor Jesus Cristo.    </string>
 
 </resources>

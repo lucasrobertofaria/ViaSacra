@@ -20,7 +20,7 @@ import com.github.florent37.materialviewpager.header.HeaderDesign;
 import java.util.Arrays;
 import java.util.List;
 
-import br.com.lucasfaria.viasacra.DAO.ParametrosDAO;
+import br.com.lucasfaria.viasacra.dao.ParametrosDAO;
 import br.com.lucasfaria.viasacra.R;
 import br.com.lucasfaria.viasacra.fragments.IEstacaoFragment;
 import br.com.lucasfaria.viasacra.fragments.IIEstacaoFragment;

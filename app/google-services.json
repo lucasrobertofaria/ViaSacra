@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "63627205576",
+    "firebase_url": "https://viasacraapp.firebaseio.com",
+    "project_id": "viasacraapp",
+    "storage_bucket": "viasacraapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63627205576:android:51d67650a56613d7",
+        "android_client_info": {
+          "package_name": "br.com.lucasfaria.viasacra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63627205576-vamu38ckg3s8rmd5067e9ito1nebck33.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.lucasfaria.viasacra",
+            "certificate_hash": "bbddf3bbd1e4bb0f0ef81319fc9ca90864cb9d75"
+          }
+        },
+        {
+          "client_id": "63627205576-5pefuoi3nls8spudoc8pj6qlrs8mf7ie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC33TFX35KBpZubftznPMjiugTXDkt9aes"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63627205576-5pefuoi3nls8spudoc8pj6qlrs8mf7ie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
