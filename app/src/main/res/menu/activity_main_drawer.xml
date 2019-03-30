@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Estações">
+
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_oracao_inicial"
+
+                    android:title="Oração Inicial" />
+                <item
+                    android:id="@+id/estacaoI"
+
+
+                    android:title="I" />
+                <item
+                    android:id="@+id/estacaoII"
+                    android:title="II" />
+                <item
+                    android:id="@+id/estacaoIII"
+                    android:title="III" />
+                <item
+                    android:id="@+id/estacaoIV"
+                    android:title="IV" />
+                <item
+                    android:id="@+id/estacaoV"
+                    android:title="V" />
+                <item
+                    android:id="@+id/estacaoVI"
+                    android:title="VI" />
+                <item
+                    android:id="@+id/estacaoVII"
+                    android:title="VII" />
+                <item
+                    android:id="@+id/estacaoVIII"
+                    android:title="VIII" />
+                <item
+                    android:id="@+id/estacaoIX"
+                    android:title="IX" />
+                <item
+                    android:id="@+id/estacaoX"
+                    android:title="X" />
+                <item
+                    android:id="@+id/estacaoXI"
+                    android:title="XI" />
+                <item
+                    android:id="@+id/estacaoXII"
+                    android:title="XII" />
+                <item
+                    android:id="@+id/estacaoXIII"
+                    android:title="XIII" />
+                <item
+                    android:id="@+id/estacaoXIV"
+                    android:title="XIV" />
+                <item
+                    android:id="@+id/nav_oracao_final"
+
+
+                    android:title="Oração Final" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

@@ -14,7 +14,7 @@ import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import br.com.lucasfaria.viasacra.R;
-import br.com.lucasfaria.viasacra.acitivity.NotificacaoActivity;
+import br.com.lucasfaria.viasacra.activity.NotificacaoActivity;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 

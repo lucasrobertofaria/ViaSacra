@@ -4,163 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@color/color_background"
+    android:paddingStart="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="60dp"
+    android:paddingEnd="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="16dp"
     tools:context=".fragments.IIEstacaoFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <TextView
         android:id="@+id/txNumeroEstacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:text="I"
-        android:textColor="@color/colorFont"
-        android:textSize="36sp"
+        android:textColor="@color/color_fonte"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/txEstacao"
         app:layout_constraintStart_toStartOf="@+id/txEstacao"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txEstacao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ESTAÇÃO"
-        android:textColor="@color/colorFont"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/txNumeroEstacao" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="30dp" />
+        app:layout_constraintGuide_end="373dp" />
 
     <TextView
         android:id="@+id/txTituloEstacao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:gravity="center"
         android:text="Jesus é condenado a morte"
-        android:textColor="@color/colorFont"
-        android:textSize="20sp"
+        android:textColor="@color/color_fonte"
+        android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/txEstacao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txEstacao"
-        app:layout_constraintTop_toTopOf="@+id/txNumeroEstacao" />
-
-    <TextView
-        android:id="@+id/txNosVosAdoramos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:gravity="start"
-        android:text="V/. Nós Vos adoramos, ó Cristo, e Vos bendizemos."
-        android:textColor="@color/colorFont"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txEstacao" />
 
     <TextView
-        android:id="@+id/txPorque"
-        android:layout_width="0dp"
+        android:id="@+id/txEstacao"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="R/. Porque pela Vossa Santa Cruz remistes o mundo."
-        android:textColor="@color/colorFont"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ESTAÇÃO"
+        android:textColor="@color/color_fonte"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txNosVosAdoramos" />
-
-    <TextView
-        android:id="@+id/txDescricao"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@string/descricaoEstacaoI"
-        android:textColor="@color/colorFont"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txPorque" />
+        app:layout_constraintTop_toBottomOf="@+id/txNumeroEstacao" />
 
     <TextView
         android:id="@+id/txOracoes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:text="Pai­ Nosso, Ave Maria, Glória  "
-        android:textColor="@color/colorFont"
+        android:textColor="@color/color_fonte"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txDescricao" />
-
-    <TextView
-        android:id="@+id/txJaculatoria"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="V/. Sagrado Coração de Jesus, vítima dos pecadores. "
-        android:textColor="@color/colorFont"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txOracoes" />
-
-    <TextView
-        android:id="@+id/txRespostaJaculatoria"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="R/. Tende piedade de nós."
-        android:textColor="@color/colorFont"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txJaculatoria" />
 
     <TextView
         android:id="@+id/txJaculatoria2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:text="V/. Pela misericórdia de Deus descansem em paz as almas dos fiéis defuntos."
-        android:textColor="@color/colorFont"
+        android:textColor="@color/color_fonte"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txRespostaJaculatoria" />
@@ -171,13 +105,80 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:text="Amém"
-        android:textColor="@color/colorFont"
+        android:textColor="@color/color_fonte"
         android:textSize="50sp"
         android:textStyle="bold|italic"
         app:fontFamily="cursive"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txJaculatoria2" />
+
+    <TextView
+        android:id="@+id/txPorque"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="R/. Porque pela Vossa Santa Cruz remistes o mundo."
+        android:textColor="@color/color_fonte"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txNosVosAdoramos" />
+
+    <TextView
+        android:id="@+id/txNosVosAdoramos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="start"
+        android:text="V/. Nós Vos adoramos, ó Cristo, e Vos bendizemos."
+        android:textColor="@color/color_fonte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txTituloEstacao" />
+
+    <TextView
+        android:id="@+id/txRespostaJaculatoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="R/. Tende piedade de nós."
+        android:textColor="@color/color_fonte"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txJaculatoria" />
+
+    <TextView
+        android:id="@+id/txJaculatoria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="V/. Sagrado Coração de Jesus, vítima dos pecadores. "
+        android:textColor="@color/color_fonte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txOracoes" />
+
+    <TextView
+        android:id="@+id/txDescricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/descricaoEstacaoI"
+        android:textColor="@color/color_fonte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txPorque" />
 
 </android.support.constraint.ConstraintLayout>

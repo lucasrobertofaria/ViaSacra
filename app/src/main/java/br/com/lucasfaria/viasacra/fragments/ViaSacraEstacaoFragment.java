@@ -11,8 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
-
 import br.com.lucasfaria.viasacra.R;
 
 /**
@@ -20,19 +18,19 @@ import br.com.lucasfaria.viasacra.R;
  */
 public class ViaSacraEstacaoFragment extends Fragment {
 
+    private static float tamanhoFonte = 16.f;
     protected NestedScrollView mScrollView;
     protected TextView titulo;
     protected TextView numeroEstacao;
     protected TextView descricao;
-    private TextView txNosTeAdoramos;
-    private TextView txPorque;
-    private TextView txOracoes;
-    private TextView txJaculatoria;
-    private TextView txRespostaJaculatoria;
-    private TextView txJaculatoria2;
-    private Drawable imagem;
-
-    private float tamanhoFonte = 16.f;
+    protected TextView txNosTeAdoramos;
+    protected TextView txPorque;
+    protected TextView txOracoes;
+    protected TextView txJaculatoria;
+    protected TextView txRespostaJaculatoria;
+    protected TextView txJaculatoria2;
+    protected TextView txEstacao;
+    protected Drawable imagem;
 
     public ViaSacraEstacaoFragment() {
         // Required empty public constructor
@@ -46,7 +44,7 @@ public class ViaSacraEstacaoFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_estacao, container, false);
         mScrollView = view.findViewById(R.id.scrollView);
-        MaterialViewPagerHelper.registerScrollView(getActivity(), mScrollView);
+
         titulo = view.findViewById(R.id.txTituloEstacao);
         numeroEstacao = view.findViewById(R.id.txNumeroEstacao);
         descricao = view.findViewById(R.id.txDescricao);
@@ -56,7 +54,7 @@ public class ViaSacraEstacaoFragment extends Fragment {
         txJaculatoria = view.findViewById(R.id.txJaculatoria);
         txRespostaJaculatoria = view.findViewById(R.id.txRespostaJaculatoria);
         txJaculatoria2 = view.findViewById(R.id.txJaculatoria2);
-
+        txEstacao = view.findViewById(R.id.txEstacao);
 
         atualizaTela();
 //        atualizarTamanhoFonte(tamanhoFonte);
@@ -84,6 +82,17 @@ public class ViaSacraEstacaoFragment extends Fragment {
             txRespostaJaculatoria.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);
             txJaculatoria2.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);
         }
+    }
+
+    protected void trataVisibilidadeOracoes() {
+        getTxEstacao().setVisibility(View.GONE);
+        getNumeroEstacao().setVisibility(View.GONE);
+        getTxJaculatoria().setVisibility(View.GONE);
+        getTxJaculatoria2().setVisibility(View.GONE);
+        getTxRespostaJaculatoria().setVisibility(View.GONE);
+        getTxOracoes().setVisibility(View.GONE);
+        getTxNosTeAdoramos().setVisibility(View.GONE);
+        getTxPorque().setVisibility(View.GONE);
     }
 
     public NestedScrollView getmScrollView() {
@@ -185,5 +194,13 @@ public class ViaSacraEstacaoFragment extends Fragment {
 
     public void setTamanhoFonte(float tamanhoFonte) {
         this.tamanhoFonte = tamanhoFonte;
+    }
+
+    public TextView getTxEstacao() {
+        return txEstacao;
+    }
+
+    public void setTxEstacao(TextView txEstacao) {
+        this.txEstacao = txEstacao;
     }
 }

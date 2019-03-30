@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <include layout="@layout/material_view_pager_placeholder" />
+
         <include layout="@layout/conteudo_estacao" />
 
 

@@ -1,8 +1,18 @@
 <resources>
-    <string name="app_name">Via Sacra</string>
+    <string name="app_name">Via Sacra App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tituloOracaoInicial">Oração Inicial</string>
+    <string name="tituloOracaoFinal">Oração Final</string>
+
     <string name="tituloI">Jesus é condenado a morte</string>
     <string name="tituloII">Jesus carrega a cruz às costas</string>
     <string name="tituloIII">Jesus cai pela primeira vez</string>
@@ -19,6 +29,18 @@
     <string name="tituloXIV">Jesus é sepultado</string>
 
 
+    <string name="descricaoOracaoInicial">Ó meu Jesus, preparo­me neste instante para acompanhar­Vos em Vossa Via Sacra. Nela eu Vos encontrarei chagado, sem forças e ensanguentado. Forte expressão usa a Escritura ao referir-se à Vossa Paixão: “Eu porém, sou um verme, não sou homem, o opróbrio de todos e a abjeção da plebe” (Sl 21, 7). Muito diferente está Vossa Divina figura d’Aquela que os Apóstolos contemplaram no Tabor, ou caminhando sobre as águas, ou curando os enfermos. Nessa divina tragédia verei estampada a feiura e a maldade de meus pecados. Aos Vossos pés deposito minhas misérias e peço-Vos perdão pela enorme culpa que tenho em Vossos tormentos!\n\nRecorro, para isso, à intercessão da Virgem Dolorosa. Que Ela me cubra com seu maternal manto, auxiliando-me a unir-me a Vós e também a abraçar a minha cruz.</string>
+    <string name="descricaoOracaoFinal">
+    Em Vós, ó Virgem Dolorosa, recordo a síntese de todos os episódios por mim meditados. Que graças místicas não Vos devem ter sido concedidas em meio àquelas angústias! Graças de sentir em Si mesma as próprias dores do Redentor. Não é sem razão que, debaixo de certo ângulo, Vós podeis ser chamada de Co­Redendora.
+\n\n
+É a Vós que “recorro e de Vós me valho, gemendo sob o peso de meus pecados”, na inabalável convicção de que “nunca se ouviu dizer que algum daqueles que têm recorrido à Vossa proteção, implorado a vossa assistência e reclamado o vosso socorro, fosse por Vós desamparado”.
+\n\n
+Mãe Dolorosa, é a Vós que recorro, imploro e reclamo pelo perdão de meus pecados, pela minha salvação eterna e pela total santificação de minha alma.
+\n\n
+E muito Vos peço ainda pela sociedade em geral, e pela própria Santa Igreja Católica Apostólica e Romana, para que cheguem à plenitude de seu esplendor e graça, e possa assim ser realizada a proclamação universal do triunfo do vosso Imaculado Coração:
+\n\n
+“Por fim Meu Imaculado Coração triunfará!”
+    </string>
     <string name="descricaoEstacaoI">Pilatos, desejando agradar à multidão, soltou-lhes Barrabás; e, depois de mandar flagelar Jesus, entregou-O para ser crucificado. (Mc 15,15) </string>
     <string name="descricaoEstacaoII">Depois de O terem escarnecido, tiraram-Lhe o manto, vestiram-Lhe as Suas roupas e levaram-No para ser crucificado. (Mt 27,31) </string>
     <string name="descricaoEstacaoIII">Vinde a Mim, todos os que estais cansados e oprimidos, que Eu hei-de aliviar-vos. Tomai sobre vós o Meu jugo e aprendei de Mim, porque sou manso e humilde de coração e encontrareis descanso para o vosso espírito. Pois o Meu jugo é suave e o Meu fardo é leve. ( Mt 11,28-30) </string>
@@ -38,81 +60,5 @@
     <string name="sobre_descricao">"Este aplicativo foi feito com a intenção de lhe ajudar a meditar mais sobre a paixão de Nosso Senhor Jesus Cristo!"</string>
     <string name="descricao_indulgencias"><b><i>Concede-se indulgência plenária ao fiel que fizer o exercício da via-sacra, piedosamente.</i></b>\n\n\tCom o piedoso exercício da via-sacra renova-se a memória das dores que sofreu o divino Redentor no caminho do pretório de Pilatos, onde foi condenado à morte, até ao monte Calvário, onde morreu na cruz para a nossa salvação.\n\nPara ganhar a indulgência plenária, determina-se o seguinte:\n\t1. O piedoso exercício deve-se realizar diante elas estações da via-sacra, legitimamente eretas.\n\t2. Requerem-se catorze cruzes para erigir a via-sacra; junto com as cruzes, costuma-se colocar outras tantas imagens ou quadros que representam as estações de Jerusalém.\n\t3. Conforme o costume mais comum, o piedoso exercício consta de catorze leituras devotas, a que se acrescentam algumas orações vocais. Requer-se piedosa meditação só da Paixão e Morte do Senhor, sem ser necessária a consideração do mistério de cada estação.\n\t4. Exige-se o movimento de uma para a outra estação. Mas se a via-sacra se faz publicamente e não se pode fazer o movimento de todos os presentes ordenadamente, basta que o dirigente se mova para cada uma das estações, enquanto os outros ficam em seus lugares. \n\t5. Os legitimamente impedidos poderão ganhar a indulgência com uma piedosa leitura e meditação da Paixão e Morte do Senhor ao menos por algum tempo, por exemplo, um quarto de hora. \n\t6. Assemelham-se ao piedoso exercício da via-sacra, também quanto à aquisição da indulgência, outros piedosos exercícios, aprovados pela competente autoridade: neles se fará memória da Paixão e Morte do Senhor, determinando também catorze estações. \n\t7. Entre os orientais, onde não houver uso deste exercício, os Patriarcas poderão determinar, para lucrar esta indulgência, outro piedoso exercício em lembrança da Paixão e Morte de Nosso Senhor Jesus Cristo.</string>
 
-
-    <!-- Strings related to Settings -->
-
-    <!-- Example General settings -->
-    <string name="pref_header_general">General</string>
-
-    <string name="pref_title_social_recommendations">Enable social recommendations</string>
-    <string name="pref_description_social_recommendations">Recommendations for people to contact
-        based on your message history
-    </string>
-
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
-
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
-    <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
-
-    <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
-
-    <string name="pref_title_sync_frequency">Sync frequency</string>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
-    </string-array>
-
-    <string-array name="list_preference_entries">
-        <item>Entry 1</item>
-        <item>Entry 2</item>
-        <item>Entry 3</item>
-    </string-array>
-
-    <string-array name="list_preference_entry_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
-    <string-array name="multi_select_list_preference_default_value" />
-
-    <string name="pref_title_system_sync_settings">System sync settings</string>
-
-    <!-- Example settings for Notifications -->
-    <string name="pref_header_notifications">Notifications</string>
-
-    <string name="pref_title_new_message_notifications">New message notifications</string>
-
-    <string name="pref_title_ringtone">Ringtone</string>
-    <string name="pref_ringtone_silent">Silent</string>
-
-    <string name="pref_title_vibrate">Vibrate</string>
-
     <string name="default_notification_channel_id">fcm_default_channel</string>
-    <string name="titulo_padrao">Você sabia que é possível lucrar indulguências rezando a Via Sacra?</string>
-    <string name="msg_padrao">Indulgências anexas à Via-Sacra\n\nConcede-se indulgência plenária ao fiel que fizer o exercício da Via-Sacra, piedosamente. Com o piedoso exercício da Via-Sacra renova-se a memória das dores que sofreu o divino Redentor no caminho do pretório de Pilatos, onde foi condenado à morte, até o monte Calvário, onde morreu na cruz para a nossa salvação. Para ganhar a indulgência plenária, determina-se o seguinte:\n\n– O piedoso exercício deve-se realizar diante das estações da via-sacra, legitimamente eretas.\n\n– Requerem-se catorze cruzes para erigir a via-sacra; junto com as cruzes, costuma-se colocar outras tantas imagens ou quadros que representam as estações de Jerusalém.\n\n– Conforme o costume mais comum, o piedoso exercício consta de catorze leituras devotas, a que se acrescentam algumas orações vocais. Requer-se piedosa meditação só da Paixão e Morte do Senhor, sem ser necessária a consideração do mistério de cada estação.\n\n– Exige-se o movimento de uma para a outra estação. Mas se a via-sacra se faz publicamente e não se pode fazer o movimento de todos os presentes ordenadamente, basta que o dirigente se mova para cada uma das estações, enquanto os outros ficam em seus lugares.\n\n– Os legitimamente impedidos poderão ganhar a indulgência com uma piedosa leitura e meditação da Paixão e Morte do Senhor ao menos por algum tempo, por exemplo, um quarto de hora.\n\n– Assemelham-se ao piedoso exercício da via-sacra, também quanto à aquisição da indulgência, outros piedosos exercícios, aprovados pela competente autoridade: neles se fará memória da Paixão e Morte do Senhor, determinando também catorze estações.\n\n– Entre os orientais, onde não houver uso deste exercício, os Patriarcas poderão determinar, para lucrar esta indulgência, outro piedoso exercício em lembrança Paixão e Morte de Nosso Senhor Jesus Cristo.    </string>
-
 </resources>

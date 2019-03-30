@@ -5,24 +5,15 @@
         android:id="@+id/actionZoomDown"
         android:icon="@drawable/ic_zoom_out_black_24dp"
         android:numericShortcut="2"
-        android:title="Diminuir"
-        app:showAsAction="always" />
+        android:title="Diminuir" />
     <item
         android:id="@+id/actionZoomUp"
         android:icon="@drawable/ic_zoom_in_black_24dp"
         android:numericShortcut="1"
-        android:title="Aumentar"
-        app:showAsAction="always" />
+        android:title="Aumentar"/>
+
     <item
-        android:id="@+id/actionSobre"
-
-        android:checkable="false"
-        android:checked="false"
-        android:enabled="true"
-        android:icon="@drawable/ic_info_outline_white_24dp"
-        android:numericShortcut="3"
-        android:title="Sobre"
-        android:visible="true"
-        app:showAsAction="always"></item>
+        android:id="@+id/nav_sobre"
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="Sobre" />
 </menu>
-
