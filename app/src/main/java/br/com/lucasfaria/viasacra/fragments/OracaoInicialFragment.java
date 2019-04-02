@@ -16,6 +16,16 @@ public class OracaoInicialFragment extends ViaSacraEstacaoFragment {
     }
 
     @Override
+    public Integer getIdFragmentAnterior() {
+        return null;
+    }
+
+    @Override
+    public Integer getIdFragmentProximo() {
+        return R.id.estacaoI;
+    }
+
+    @Override
     public String toString() {
         return "Oração Inicial";
     }
@@ -26,6 +36,6 @@ public class OracaoInicialFragment extends ViaSacraEstacaoFragment {
         descricao.setText(R.string.descricaoOracaoInicial);
         titulo.setText(R.string.tituloOracaoInicial);
         trataVisibilidadeOracoes();
-        setImagem(getResources().getDrawable(R.drawable.i));
+
     }
 }

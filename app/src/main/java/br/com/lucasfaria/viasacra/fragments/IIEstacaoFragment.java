@@ -9,13 +9,22 @@ public class IIEstacaoFragment extends ViaSacraEstacaoFragment {
     }
 
     @Override
+    public Integer getIdFragmentAnterior() {
+        return R.id.estacaoI;
+    }
+
+    @Override
+    public Integer getIdFragmentProximo() {
+        return R.id.estacaoIII;
+    }
+
+    @Override
     protected void atualizaTela() {
         super.atualizaTela();
 
         descricao.setText(R.string.descricaoEstacaoII);
 
         titulo.setText(R.string.tituloII);
-        setImagem( getResources().getDrawable(R.drawable.ii));
     }
 
     @Override

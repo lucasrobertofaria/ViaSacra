@@ -15,6 +15,16 @@ public class IIIEstacaoFragment extends ViaSacraEstacaoFragment {
         // Required empty public constructor
     }
 
+    @Override
+    public Integer getIdFragmentAnterior() {
+        return R.id.estacaoII;
+    }
+
+
+    @Override
+    public Integer getIdFragmentProximo() {
+        return R.id.estacaoIV;
+    }
 
     @Override
     protected void atualizaTela() {
@@ -22,7 +32,6 @@ public class IIIEstacaoFragment extends ViaSacraEstacaoFragment {
         descricao.setText(R.string.descricaoEstacaoIII);
 
         titulo.setText(R.string.tituloIII);
-        setImagem( getResources().getDrawable(R.drawable.iii));
     }
     @Override
     public String toString() {

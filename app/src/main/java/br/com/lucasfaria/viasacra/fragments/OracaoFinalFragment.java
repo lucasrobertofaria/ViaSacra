@@ -16,6 +16,17 @@ public class OracaoFinalFragment extends ViaSacraEstacaoFragment {
         // Required empty public constructor
     }
 
+
+    @Override
+    public Integer getIdFragmentAnterior() {
+        return R.id.estacaoXIV;
+    }
+
+    @Override
+    public Integer getIdFragmentProximo() {
+        return null;
+    }
+
     @Override
     public String toString() {
         return "Oração Final";
@@ -28,7 +39,6 @@ public class OracaoFinalFragment extends ViaSacraEstacaoFragment {
         titulo.setText(R.string.tituloOracaoFinal);
 
         trataVisibilidadeOracoes();
-        setImagem(getResources().getDrawable(R.drawable.i));
     }
 
 

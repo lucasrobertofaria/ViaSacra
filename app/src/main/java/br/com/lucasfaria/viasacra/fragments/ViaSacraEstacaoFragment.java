@@ -9,19 +9,21 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import br.com.lucasfaria.viasacra.R;
+import br.com.lucasfaria.viasacra.activity.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ViaSacraEstacaoFragment extends Fragment {
+public abstract class ViaSacraEstacaoFragment extends Fragment {
 
     private static float tamanhoFonte = 16.f;
     protected NestedScrollView mScrollView;
     protected TextView titulo;
-    protected TextView numeroEstacao;
+    protected TextView txNumeroEstacao;
     protected TextView descricao;
     protected TextView txNosTeAdoramos;
     protected TextView txPorque;
@@ -30,11 +32,18 @@ public class ViaSacraEstacaoFragment extends Fragment {
     protected TextView txRespostaJaculatoria;
     protected TextView txJaculatoria2;
     protected TextView txEstacao;
-    protected Drawable imagem;
+
+    protected Button btVoltar;
+    protected Button btProximo;
+
 
     public ViaSacraEstacaoFragment() {
         // Required empty public constructor
     }
+
+    public abstract Integer getIdFragmentAnterior();
+
+    public abstract Integer getIdFragmentProximo();
 
 
     @Override
@@ -46,7 +55,7 @@ public class ViaSacraEstacaoFragment extends Fragment {
         mScrollView = view.findViewById(R.id.scrollView);
 
         titulo = view.findViewById(R.id.txTituloEstacao);
-        numeroEstacao = view.findViewById(R.id.txNumeroEstacao);
+        txNumeroEstacao = view.findViewById(R.id.txNumeroEstacao);
         descricao = view.findViewById(R.id.txDescricao);
         txNosTeAdoramos = view.findViewById(R.id.txNosVosAdoramos);
         txPorque = view.findViewById(R.id.txPorque);
@@ -55,6 +64,36 @@ public class ViaSacraEstacaoFragment extends Fragment {
         txRespostaJaculatoria = view.findViewById(R.id.txRespostaJaculatoria);
         txJaculatoria2 = view.findViewById(R.id.txJaculatoria2);
         txEstacao = view.findViewById(R.id.txEstacao);
+
+
+        btVoltar = view.findViewById(R.id.btVoltar);
+        btProximo = view.findViewById(R.id.btProximo);
+
+        btVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity mainActivity = (MainActivity) getActivity();
+                mainActivity.atualizarFragmentVoltar(ViaSacraEstacaoFragment.this);
+
+            }
+        });
+
+        btProximo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity mainActivity = (MainActivity) getActivity();
+                mainActivity.atualizarFragmentProximo(ViaSacraEstacaoFragment.this);
+            }
+        });
+
+
+        if(getIdFragmentAnterior() == null){
+            btVoltar.setVisibility(View.GONE);
+        }
+
+        if(getIdFragmentProximo() == null){
+            btProximo.setVisibility(View.GONE);
+        }
 
         atualizaTela();
 //        atualizarTamanhoFonte(tamanhoFonte);
@@ -86,7 +125,7 @@ public class ViaSacraEstacaoFragment extends Fragment {
 
     protected void trataVisibilidadeOracoes() {
         getTxEstacao().setVisibility(View.GONE);
-        getNumeroEstacao().setVisibility(View.GONE);
+        getTxNumeroEstacao().setVisibility(View.GONE);
         getTxJaculatoria().setVisibility(View.GONE);
         getTxJaculatoria2().setVisibility(View.GONE);
         getTxRespostaJaculatoria().setVisibility(View.GONE);
@@ -111,13 +150,6 @@ public class ViaSacraEstacaoFragment extends Fragment {
         this.titulo = titulo;
     }
 
-    public TextView getNumeroEstacao() {
-        return numeroEstacao;
-    }
-
-    public void setNumeroEstacao(TextView numeroEstacao) {
-        this.numeroEstacao = numeroEstacao;
-    }
 
     public TextView getDescricao() {
         return descricao;
@@ -175,18 +207,18 @@ public class ViaSacraEstacaoFragment extends Fragment {
         this.txJaculatoria2 = txJaculatoria2;
     }
 
+    public TextView getTxNumeroEstacao() {
+        return txNumeroEstacao;
+    }
+
+    public void setTxNumeroEstacao(TextView txNumeroEstacao) {
+        this.txNumeroEstacao = txNumeroEstacao;
+    }
 
     protected void atualizaTela() {
-        numeroEstacao.setText(toString());
+        txNumeroEstacao.setText(toString());
     }
 
-    public Drawable getImagem() {
-        return imagem;
-    }
-
-    public void setImagem(Drawable imagem) {
-        this.imagem = imagem;
-    }
 
     public float getTamanhoFonte() {
         return tamanhoFonte;
@@ -203,4 +235,9 @@ public class ViaSacraEstacaoFragment extends Fragment {
     public void setTxEstacao(TextView txEstacao) {
         this.txEstacao = txEstacao;
     }
+
+
+    ;
+
+
 }

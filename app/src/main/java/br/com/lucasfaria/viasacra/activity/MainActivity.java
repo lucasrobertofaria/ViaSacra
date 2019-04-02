@@ -2,9 +2,7 @@ package br.com.lucasfaria.viasacra.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -14,7 +12,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import java.util.Arrays;
 import java.util.List;
@@ -43,11 +40,13 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ViaSacraEstacaoFragment fragmentCurrent = null;
-    private List<ViaSacraEstacaoFragment> fragmentList = Arrays.asList(new IEstacaoFragment(), new IIEstacaoFragment(), new IIIEstacaoFragment(), new IVEstacaoFragment(), new VEstacaoFragment(), new VIEstacaoFragment(), new VIIEstacaoFragment(),
-            new VIIIEstacaoFragment(), new IXEstacaoFragment(), new XEstacaoFragment(), new XIEstacaoFragment(), new XIIEstacaoFragment(), new XIIIEstacaoFragment(), new XIVEstacaoFragment());
+    private List<ViaSacraEstacaoFragment> fragmentList = Arrays.asList(new OracaoInicialFragment(), new IEstacaoFragment(), new IIEstacaoFragment(), new IIIEstacaoFragment(), new IVEstacaoFragment(), new VEstacaoFragment(), new VIEstacaoFragment(), new VIIEstacaoFragment(),
+            new VIIIEstacaoFragment(), new IXEstacaoFragment(), new XEstacaoFragment(), new XIEstacaoFragment(), new XIIEstacaoFragment(), new XIIIEstacaoFragment(), new XIVEstacaoFragment(), new OracaoFinalFragment());
     private DisplayMetrics metrics;
     private Float tamanhoFonte;
     private ParametrosDAO dao;
+
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,13 +67,14 @@ public class MainActivity extends AppCompatActivity
             }
         });*/
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
@@ -137,6 +137,7 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -144,26 +145,26 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_oracao_inicial) {
-            fragmentCurrent = new OracaoInicialFragment();
-        } else if (id == R.id.nav_oracao_final) {
-            fragmentCurrent = new OracaoFinalFragment();
-        } else {
-            Integer estacao = getNumeroEstacao(id);
 
-            if (estacao != null) {
+        atualizarFragment(id);
+        return true;
+    }
 
-                fragmentCurrent = fragmentList.get(estacao - 1);
+    private void atualizarFragment(int id) {
+        Integer estacao = getNumeroEstacao(id);
 
-
-            }
+        if (estacao != null) {
+            fragmentCurrent = fragmentList.get(estacao);
         }
+        atualizarFragment();
+    }
+
+    private void atualizarFragment() {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frameContainer, fragmentCurrent);
         fragmentTransaction.commit();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 
     private void atualizarTamanhoFonte(Float tamanho) {
@@ -178,7 +179,9 @@ public class MainActivity extends AppCompatActivity
 
     private Integer getNumeroEstacao(int id) {
         Integer estacao = null;
-        if (id == R.id.estacaoI) {
+        if (id == R.id.nav_oracao_inicial) {
+            estacao = 0;
+        } else if (id == R.id.estacaoI) {
             estacao = 1;
         } else if (id == R.id.estacaoII) {
             estacao = 2;
@@ -207,7 +210,23 @@ public class MainActivity extends AppCompatActivity
             estacao = 13;
         } else if (id == R.id.estacaoXIV) {
             estacao = 14;
+        } else if (id == R.id.nav_oracao_final) {
+            estacao = 15;
         }
         return estacao;
+    }
+
+    public void atualizarFragmentVoltar(ViaSacraEstacaoFragment newFragment) {
+
+        navigationView.setCheckedItem(newFragment.getIdFragmentAnterior());
+        atualizarFragment(newFragment.getIdFragmentAnterior());
+
+    }
+
+    public void atualizarFragmentProximo(ViaSacraEstacaoFragment newFragment) {
+
+        navigationView.setCheckedItem(newFragment.getIdFragmentProximo());
+        atualizarFragment(newFragment.getIdFragmentProximo());
+
     }
 }
