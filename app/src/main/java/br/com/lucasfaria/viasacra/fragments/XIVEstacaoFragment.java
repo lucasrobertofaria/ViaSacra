@@ -31,6 +31,7 @@ public class XIVEstacaoFragment extends ViaSacraEstacaoFragment {
         descricao.setText(R.string.descricaoEstacaoXIV);
 
         titulo.setText(R.string.tituloXIV);
+        txMeditacaoConteudo.setText(R.string.meditacaoXIV);
     }
 
     @Override

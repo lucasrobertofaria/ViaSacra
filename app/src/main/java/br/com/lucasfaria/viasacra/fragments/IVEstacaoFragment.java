@@ -26,6 +26,7 @@ public class IVEstacaoFragment extends ViaSacraEstacaoFragment {
 
         titulo.setText(R.string.tituloIV);
         descricao.setText(R.string.descricaoEstacaoIV);
+        txMeditacaoConteudo.setText(R.string.meditacaoVI);
     }
     @Override
     public String toString() {

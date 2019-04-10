@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/actionZoomDown"
-        android:icon="@drawable/ic_zoom_out_black_24dp"
-        android:numericShortcut="2"
-        android:title="Diminuir" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/actionZoomUp"
-        android:icon="@drawable/ic_zoom_in_black_24dp"
         android:numericShortcut="1"
-        android:title="Aumentar"/>
+        android:title="Aumentar" />
+    <item
+        android:id="@+id/actionZoomDown"
+        android:numericShortcut="2"
+        android:title="Diminuir" />
+
 
     <item
         android:id="@+id/nav_sobre"
-        android:icon="@drawable/ic_info_black_24dp"
+        android:numericShortcut="3"
         android:title="Sobre" />
 </menu>

@@ -37,5 +37,6 @@ public class IEstacaoFragment extends ViaSacraEstacaoFragment {
         super.atualizaTela();
         descricao.setText(R.string.descricaoEstacaoI);
         titulo.setText(R.string.tituloI);
+        txMeditacaoConteudo.setText(R.string.meditacaoI);
     }
 }

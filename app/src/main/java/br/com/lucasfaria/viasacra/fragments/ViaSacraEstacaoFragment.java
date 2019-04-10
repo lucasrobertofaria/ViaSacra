@@ -32,6 +32,8 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
     protected TextView txRespostaJaculatoria;
     protected TextView txJaculatoria2;
     protected TextView txEstacao;
+    protected TextView txMeditacao;
+    protected TextView txMeditacaoConteudo;
 
     protected Button btVoltar;
     protected Button btProximo;
@@ -64,6 +66,8 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
         txRespostaJaculatoria = view.findViewById(R.id.txRespostaJaculatoria);
         txJaculatoria2 = view.findViewById(R.id.txJaculatoria2);
         txEstacao = view.findViewById(R.id.txEstacao);
+        txMeditacaoConteudo = view.findViewById(R.id.txMeditacaoConteudo);
+        txMeditacao = view.findViewById(R.id.txMeditacao);
 
 
         btVoltar = view.findViewById(R.id.btVoltar);
@@ -120,6 +124,8 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
             txJaculatoria.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);
             txRespostaJaculatoria.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);
             txJaculatoria2.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);
+            txMeditacao.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);
+            txMeditacaoConteudo.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);
         }
     }
 
@@ -132,6 +138,9 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
         getTxOracoes().setVisibility(View.GONE);
         getTxNosTeAdoramos().setVisibility(View.GONE);
         getTxPorque().setVisibility(View.GONE);
+        getTxMeditacao().setVisibility(View.GONE);
+        getTxMeditacaoConteudo().setVisibility(View.GONE);
+
     }
 
     public NestedScrollView getmScrollView() {
@@ -236,8 +245,19 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
         this.txEstacao = txEstacao;
     }
 
+    public TextView getTxMeditacao() {
+        return txMeditacao;
+    }
 
-    ;
+    public void setTxMeditacao(TextView txMeditacao) {
+        this.txMeditacao = txMeditacao;
+    }
 
+    public TextView getTxMeditacaoConteudo() {
+        return txMeditacaoConteudo;
+    }
 
+    public void setTxMeditacaoConteudo(TextView txMeditacaoConteudo) {
+        this.txMeditacaoConteudo = txMeditacaoConteudo;
+    }
 }

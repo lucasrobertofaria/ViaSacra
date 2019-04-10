@@ -31,6 +31,7 @@ public class VEstacaoFragment extends ViaSacraEstacaoFragment {
         descricao.setText(R.string.descricaoEstacaoV);
 
         titulo.setText(R.string.tituloV);
+        txMeditacaoConteudo.setText(R.string.meditacaoV);
     }
 
     @Override
