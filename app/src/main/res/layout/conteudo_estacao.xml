@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_background"
+    android:fillViewport="true"
     android:paddingStart="8dp"
     android:paddingLeft="8dp"
     android:paddingTop="60dp"
@@ -17,9 +18,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="60dp">
+        android:layout_height="match_parent">
 
 
         <TextView
@@ -213,10 +212,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
             android:text="Voltar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txAmem" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/btProximo"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/btProximo"
@@ -225,8 +223,10 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:text="Próxima"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txAmem" />
+            app:layout_constraintTop_toBottomOf="@+id/txAmem"
+            app:layout_constraintVertical_bias="1.0" />
 
 
     </android.support.constraint.ConstraintLayout>

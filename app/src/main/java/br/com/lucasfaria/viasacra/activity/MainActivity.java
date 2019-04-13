@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity
                 return true;
             } else if (id == R.id.actionZoomUp) {
 
-                if ( tamanhoFonte < 40.f) {
+                if (tamanhoFonte < 40.f) {
                     atualizarTamanhoFonte(tamanhoFonte + 2.f);
                 }
 
@@ -148,7 +148,9 @@ public class MainActivity extends AppCompatActivity
 
 
         atualizarFragment(id);
-        atualizarTamanhoFonte(dao.recuperarTamanhoFonte());
+        Float tamanho = dao.recuperarTamanhoFonte();
+        if (tamanho != null)
+            atualizarTamanhoFonte(tamanho);
         return true;
     }
 

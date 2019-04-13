@@ -1,9 +1,11 @@
 package br.com.lucasfaria.viasacra.fragments;
 
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
+import android.text.Layout;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -225,6 +227,10 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
 
     protected void atualizaTela() {
         txNumeroEstacao.setText(toString());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            getTxMeditacaoConteudo().setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
+            getDescricao().setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
+        }
     }
 
 
