@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
 
         dao = new ParametrosDAO(this);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity
             if (id == R.id.actionZoomDown) {
 
 
-                if (tamanhoFonte != null && tamanhoFonte > 10.f) {
+                if (tamanhoFonte > 10.f) {
                     atualizarTamanhoFonte(tamanhoFonte - 1.f);
                 }
 
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
                 return true;
             } else if (id == R.id.actionZoomUp) {
 
-                if (tamanhoFonte != null && tamanhoFonte < 40.f) {
+                if ( tamanhoFonte < 40.f) {
                     atualizarTamanhoFonte(tamanhoFonte + 1.f);
                 }
 
@@ -163,7 +163,7 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frameContainer, fragmentCurrent);
         fragmentTransaction.commit();
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
     }
 

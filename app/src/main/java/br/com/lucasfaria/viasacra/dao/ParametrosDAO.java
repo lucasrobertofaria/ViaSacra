@@ -12,7 +12,7 @@ public class ParametrosDAO {
 
     public ParametrosDAO(Context context) {
         this.context = context;
-        preferences = context.getSharedPreferences(Context.AUDIO_SERVICE, Context.MODE_PRIVATE);
+        preferences = this.context.getSharedPreferences(ARQUIVO_PREFERENCIAS, Context.MODE_PRIVATE);
         editor = preferences.edit();
     }
 
