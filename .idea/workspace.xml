@@ -19,19 +19,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/release/app.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app.aab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/ViaSacraEstacaoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/ViaSacraEstacaoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_estacao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_estacao.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,28 +98,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
-          <entry key="gradle" value="11" />
+          <entry key="gradle" value="12" />
           <entry key="java" value="203" />
           <entry key="jpg" value="2" />
           <entry key="json" value="1" />
           <entry key="png" value="13" />
-          <entry key="xml" value="91" />
+          <entry key="xml" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
-          <entry key="Groovy" value="11" />
+          <entry key="Groovy" value="12" />
           <entry key="Image" value="15" />
           <entry key="JAVA" value="203" />
           <entry key="JSON" value="1" />
-          <entry key="XML" value="91" />
+          <entry key="XML" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="gradle" value="27" />
+          <entry key="gradle" value="29" />
           <entry key="java" value="2994" />
           <entry key="txt" value="398" />
           <entry key="xml" value="487" />
@@ -130,7 +127,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="27" />
+          <entry key="Groovy" value="29" />
           <entry key="JAVA" value="2994" />
           <entry key="PLAIN_TEXT" value="403" />
           <entry key="XML" value="487" />
@@ -141,66 +138,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_estacao.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="30">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#355#395#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/ViaSacraEstacaoFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+            <state relative-caret-position="120">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/service/MyFirebaseMessagingService.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="53" column="13" selection-start-line="50" selection-start-column="10" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="240">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/IEstacaoFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="57" />
-              <folding>
-                <element signature="e#813#832#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -214,23 +177,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_estacao.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            <state relative-caret-position="285">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="1635">
+              <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -326,7 +289,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/XIIIEstacaoFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/XIVEstacaoFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/IVEstacaoFragment.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_notificacao.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/service/MyFirebaseMessagingService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/activity/NotificacaoActivity.java" />
@@ -338,8 +300,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/conteudo2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_estacao.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/ViaSacraEstacaoFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
       </list>
     </option>
   </component>
@@ -437,7 +400,7 @@
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="SearchEverywhereHistoryKey" value="my&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/java/br/com/lucasfaria/viasacra/service/MyFirebaseMessagingService.java&#10;viasa&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/java/br/com/lucasfaria/viasacra/fragments/ViaSacraEstacaoFragment.java&#10;sobre&#9;PSI&#9;JAVA://br.com.lucasfaria.viasacra.activity.SobreActivity&#10;ora&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/java/br/com/lucasfaria/viasacra/fragments/OracaoFinalFragment.java&#10;notif&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/java/br/com/lucasfaria/viasacra/activity/NotificacaoActivity.java&#10;myfi&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/java/br/com/lucasfaria/viasacra/service/MyFirebaseMessagingService.java&#10;conte&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/res/layout/conteudo_estacao.xml&#10;so&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/java/br/com/lucasfaria/viasacra/activity/SobreActivity.java&#10;main&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/java/br/com/lucasfaria/viasacra/activity/MainActivity.java&#10;mai&#9;PSI&#9;JAVA://br.com.lucasfaria.viasacra.activity.MainActivity&#10;str&#9;FILE&#9;file:///home/lucas/AndroidStudioProjects/ViaSacra/app/src/main/res/values/strings.xml" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="device.picker.selection" value="Tablet_Nexus_10_API_28" />
+    <property name="device.picker.selection" value="Nexus_4_API_22" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Organizze" />
@@ -663,7 +626,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18815717" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18815717" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -672,14 +635,14 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Inspection Results" order="0" sideWeight="0.4980631" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="1" sideWeight="0.4997233" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="2" sideWeight="0.78527945" visible="true" weight="0.42486486" />
+      <window_info anchor="bottom" id="Logcat" order="2" sideWeight="0.7847261" weight="0.42486486" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4991699" weight="0.32972974" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.32972974" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32972974" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.21472053" side_tool="true" visible="true" weight="0.42486486" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.30879912" side_tool="true" visible="true" weight="0.18162163" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4997233" weight="0.32972974" />
-      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.6923077" weight="0.18162163" />
+      <window_info anchor="bottom" id="Build" order="9" sideWeight="0.6912009" visible="true" weight="0.18162163" />
       <window_info anchor="bottom" id="Android Profiler" order="10" weight="0.32972974" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -933,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/VIEstacaoFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -992,29 +948,20 @@
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_notificacao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="375">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/ViaSacraEstacaoFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1027,29 +974,12 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/service/MyFirebaseMessagingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="53" column="13" selection-start-line="50" selection-start-column="10" selection-end-line="53" selection-end-column="13" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_estacao.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/IEstacaoFragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1061,17 +991,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/service/MyFirebaseMessagingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="53" column="13" selection-start-line="50" selection-start-column="10" selection-end-line="53" selection-end-column="13" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_estacao.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/br/com/lucasfaria/viasacra/fragments/ViaSacraEstacaoFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        <state relative-caret-position="240">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_notificacao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/conteudo_estacao.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
