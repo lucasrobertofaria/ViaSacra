@@ -113,7 +113,7 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
 
     public void atualizarTamanhoFonte(Float tamanhoFonte) {
         this.tamanhoFonte = tamanhoFonte;
-        if (txNosTeAdoramos != null ) {
+        if (txNosTeAdoramos != null) {
 
 
             txNosTeAdoramos.setTextSize(TypedValue.COMPLEX_UNIT_SP, tamanhoFonte);

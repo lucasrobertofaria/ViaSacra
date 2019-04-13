@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity
 
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity
 
 
                 if (tamanhoFonte > 10.f) {
-                    atualizarTamanhoFonte(tamanhoFonte - 1.f);
+                    atualizarTamanhoFonte(tamanhoFonte - 2.f);
                 }
 
 
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity
             } else if (id == R.id.actionZoomUp) {
 
                 if ( tamanhoFonte < 40.f) {
-                    atualizarTamanhoFonte(tamanhoFonte + 1.f);
+                    atualizarTamanhoFonte(tamanhoFonte + 2.f);
                 }
 
 
@@ -147,6 +148,7 @@ public class MainActivity extends AppCompatActivity
 
 
         atualizarFragment(id);
+        atualizarTamanhoFonte(dao.recuperarTamanhoFonte());
         return true;
     }
 
