@@ -1,7 +1,6 @@
 package br.com.lucasfaria.viasacra.fragments;
 
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
@@ -91,11 +90,11 @@ public abstract class ViaSacraEstacaoFragment extends Fragment {
         });
 
 
-        if(getIdFragmentAnterior() == null){
+        if (getIdFragmentAnterior() == null) {
             btVoltar.setVisibility(View.GONE);
         }
 
-        if(getIdFragmentProximo() == null){
+        if (getIdFragmentProximo() == null) {
             btProximo.setVisibility(View.GONE);
         }
 

@@ -2,7 +2,6 @@ package br.com.lucasfaria.viasacra.fragments;
 
 
 import android.support.v4.app.Fragment;
-import android.view.View;
 
 import br.com.lucasfaria.viasacra.R;
 

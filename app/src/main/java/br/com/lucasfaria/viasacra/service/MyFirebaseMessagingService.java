@@ -2,9 +2,7 @@ package br.com.lucasfaria.viasacra.service;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.RingtoneManager;
@@ -17,7 +15,6 @@ import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 import br.com.lucasfaria.viasacra.R;
-import br.com.lucasfaria.viasacra.activity.NotificacaoActivity;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
@@ -26,14 +23,14 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         if (remoteMessage.getNotification() != null) {
             Uri uriSom = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
 
-            Intent notifyIntent = new Intent(this, NotificacaoActivity.class);
-            notifyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
-                    | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            notifyIntent.setClass(this,NotificacaoActivity.class);
-// Create the PendingIntent
-            PendingIntent notifyPendingIntent = PendingIntent.getActivity(
-                    this, 0, notifyIntent, PendingIntent.FLAG_CANCEL_CURRENT
-            );
+//            Intent notifyIntent = new Intent(this, NotificacaoActivity.class);
+//            notifyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
+//                    | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            notifyIntent.setClass(this,NotificacaoActivity.class);
+//// Create the PendingIntent
+//            PendingIntent notifyPendingIntent = PendingIntent.getActivity(
+//                    this, 0, notifyIntent, PendingIntent.FLAG_CANCEL_CURRENT
+//            );
 
             Bitmap img = BitmapFactory.decodeResource(getResources(), R.drawable.icon_via_sacra);
 
@@ -45,7 +42,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                     .setSound(uriSom)
                     .setStyle(new NotificationCompat.BigTextStyle())
                     .setAutoCancel(true);
-            builder.setContentIntent(notifyPendingIntent);
+//            builder.setContentIntent(notifyPendingIntent);
 
 
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
